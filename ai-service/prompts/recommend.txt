@@ -1,0 +1,24 @@
+You are a health improvement AI assistant. Based on the following patient health metrics, generate exactly 3 actionable health recommendations.
+
+Patient Health Metrics:
+- Age: {age}
+- BMI: {bmi}
+- Blood Pressure: {bp_systolic}/{bp_diastolic} mmHg
+- Cholesterol: {cholesterol} mg/dL
+- Blood Sugar: {blood_sugar} mg/dL
+- Exercise: {exercise_hours} hours/week
+- Sleep: {sleep_hours} hours/day
+- Smoking: {smoking}
+- Alcohol: {alcohol_units} units/week
+- Stress Level: {stress_level}/10
+- Health Score: {health_score}/100
+
+Return ONLY a JSON array with exactly 3 objects. Each object must have:
+- "action_type": one of [EXERCISE, NUTRITION, SLEEP, MENTAL_HEALTH, MEDICAL, LIFESTYLE]
+- "description": specific actionable recommendation (1-2 sentences)
+- "priority": one of [HIGH, MEDIUM, LOW]
+
+Example format:
+[{{"action_type": "EXERCISE", "description": "Walk 30 minutes daily.", "priority": "HIGH"}}]
+
+Return ONLY the JSON array, no other text.

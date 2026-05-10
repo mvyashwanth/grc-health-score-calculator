@@ -1,0 +1,13 @@
+.env
+target/
+node_modules/
+__pycache__/
+chroma_data/
+*.class
+*.jar
+*.war
+.idea/
+.vscode/
+*.iml
+dist/
+build/
