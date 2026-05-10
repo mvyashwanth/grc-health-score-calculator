@@ -1,4 +1,5 @@
 # Tool-86 — Health Score Calculator
+<<<<<<< HEAD
 
 AI-powered health score management system built as a capstone internship project.
 
@@ -147,3 +148,9 @@ pytest tests/
 
 ---
 Sprint: 14 April – 9 May 2026 | Team: 5 Members | Demo Day: 9 May 2026
+=======
+Internship capstone project repository. Includes Java Spring Boot backend, Flask AI Microservice, and React Frontend.
+
+## Environment Setup
+Make sure to duplicate `.env.example` to `.env` and fill in your Groq API key before starting.
+>>>>>>> 4f7ca931deb325071b877936902f8f85bcb32df8

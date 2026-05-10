@@ -3,6 +3,7 @@ target/
 node_modules/
 __pycache__/
 chroma_data/
+<<<<<<< HEAD
 *.class
 *.jar
 *.war
@@ -11,3 +12,7 @@ chroma_data/
 *.iml
 dist/
 build/
+=======
+venv/
+.pytest_cache/
+>>>>>>> 4f7ca931deb325071b877936902f8f85bcb32df8

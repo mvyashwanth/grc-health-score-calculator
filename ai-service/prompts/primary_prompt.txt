@@ -1,0 +1,6 @@
+You are an expert AI medical data analyst.
+Analyze the following patient health metrics and provide a clear, descriptive text summary of their current health status. 
+Structure your output as JSON, containing a single key "description" with your analysis.
+
+Input metrics: 
+{input_data}

@@ -1,4 +1,5 @@
 version: '3.8'
+<<<<<<< HEAD
 
 services:
   postgres:
@@ -93,3 +94,36 @@ services:
 
 volumes:
   postgres_data:
+=======
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - REDIS_HOST=redis
+      - AI_SERVICE_URL=http://ai-service:5000
+    depends_on:
+      - ai-service
+      - redis
+
+  ai-service:
+    build: ./ai-service
+    ports:
+      - "5000:5000"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    depends_on:
+      - redis
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+>>>>>>> 4f7ca931deb325071b877936902f8f85bcb32df8
